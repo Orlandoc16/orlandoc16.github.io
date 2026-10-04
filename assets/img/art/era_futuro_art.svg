@@ -1,0 +1,56 @@
+<svg viewBox="0 0 600 420" width="600" height="420" xmlns="http://www.w3.org/2000/svg">
+    
+  <defs>
+    <radialGradient id="era7-wash-glow" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#d6e9f8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#5bb8cf" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="era7-sky-wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eaf3fb"/>
+      <stop offset="50%" stop-color="#f5f9fd"/>
+      <stop offset="100%" stop-color="#e2eff9"/>
+    </linearGradient>
+
+    <pattern id="era7-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#7e94aa" stroke-width="0.35" opacity="0.3" stroke-dasharray="2 3"/>
+    </pattern>
+  </defs>
+  
+    <rect width="600" height="420" fill="url(#era7-sky-wash)"/>
+    <rect width="600" height="420" fill="url(#era7-grid)"/>
+
+    <ellipse cx="300" cy="200" rx="240" ry="140" fill="#d6e9f8" opacity="0.6"/>
+    <path d="M0 320 L150 200 L300 280 L450 170 L600 290 L600 420 L0 420 Z" fill="#1e4c7a" opacity="0.6"/>
+
+    <g transform="translate(450, 170)">
+      <circle cx="0" cy="-28" r="8" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/>
+      <path d="M -5 -20 L -8 0 M 5 -20 L 8 0 M -8 -10 L 15 -25" stroke="#131e29" stroke-width="1.3"/>
+      <line x1="15" y1="-25" x2="60" y2="-60" stroke="#00b4d8" stroke-width="1.5" stroke-dasharray="3 2"/>
+    </g>
+
+    <g opacity="0.8"><line x1="144" y1="114" x2="192" y2="66" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="144" y1="114" x2="192" y2="66" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="192" y1="66" x2="276" y2="78" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="192" y1="66" x2="276" y2="78" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="276" y1="78" x2="324" y2="126" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="276" y1="78" x2="324" y2="126" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="324" y1="126" x2="312" y2="210" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="324" y1="126" x2="312" y2="210" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="312" y1="210" x2="216" y2="222" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="312" y1="210" x2="216" y2="222" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="216" y1="222" x2="156" y2="198" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="216" y1="222" x2="156" y2="198" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><line x1="156" y1="198" x2="240" y2="150" stroke="#5bb8cf" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="156" y1="198" x2="240" y2="150" stroke="#131e29" stroke-width="0.9" stroke-dasharray="4 2"/><circle cx="144" cy="114" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="144" cy="114" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="192" cy="66" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="192" cy="66" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="276" cy="78" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="276" cy="78" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="324" cy="126" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="324" cy="126" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="312" cy="210" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="312" cy="210" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="216" cy="222" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="216" cy="222" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="156" cy="198" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="156" cy="198" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/><circle cx="240" cy="150" r="6" fill="#2b78b8" opacity="0.25"/><circle cx="240" cy="150" r="2.5" fill="#ffffff" stroke="#131e29" stroke-width="1.1"/></g>
+
+    <g transform="translate(50, 230)">
+      <rect width="250" height="110" rx="4" fill="#ffffff" stroke="#131e29" stroke-width="1.2"/>
+      <text x="14" y="22" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold" fill="#131e29">ORLANDO COSSIO MURILLO</text>
+      <text x="14" y="40" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" fill="#2b78b8">Sr. Full-Stack &amp; Backend | Data Scientist</text>
+      <text x="14" y="58" font-family="'Space Mono', monospace" font-size="8.5" fill="#3c4e61">· 10+ Años de Experiencia Comprobada</text>
+      <text x="14" y="74" font-family="'Space Mono', monospace" font-size="8.5" fill="#3c4e61">· Backend Distribuido, Cloud &amp; Data</text>
+      <text x="14" y="90" font-family="'Space Mono', monospace" font-size="8.5" fill="#3c4e61">· Machine Learning &amp; Agentes IA</text>
+      <text x="14" y="104" font-family="'Space Mono', monospace" font-size="8.5" fill="#3c4e61">· Soluciones Escalables con Impacto</text>
+    </g>
+
+    <g transform="translate(40, 40)">
+      <rect width="250" height="50" rx="4" fill="#ffffff" stroke="#131e29" stroke-width="1"/>
+      <text x="12" y="22" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold" fill="#131e29">10+ AÑOS DE IMPACTO</text>
+      <text x="12" y="38" font-family="'Space Mono', monospace" font-size="10" fill="#2b78b8">Liderazgo · Datos · Soluciones</text>
+    </g>
+
+    
+  <rect x="8" y="8" width="584" height="404" rx="6" fill="none" stroke="#131e29" stroke-width="1.2" opacity="0.6" stroke-dasharray="570 8 390 8"/>
+  <rect x="12" y="12" width="576" height="396" rx="4" fill="none" stroke="#2b78b8" stroke-width="0.7" opacity="0.4"/>
+  
+  </svg>
+  
