@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'Fundamentos',
       title: 'Las Raíces de la Lógica & UniValle',
       desc: 'Formación rigurosa en Ingeniería de Sistemas en la Universidad del Valle. Bases de datos relacionales, estructuras de datos y algoritmos fundamentales que cimentaron el pensamiento arquitectónico.',
+      yearEn: 'Foundations', titleEn: 'The Roots of Logic & UniValle', descEn: 'Rigorous training in Systems Engineering at Universidad del Valle. Relational databases, data structures and core algorithms that laid the foundation of architectural thinking.',
       tags: ['Universidad del Valle', 'Algoritmia', 'Bases de Datos', 'Data Structures'],
       duration: 8
     },
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'Enterprise Core',
       title: 'Arquitectura Backend & Open Systems',
       desc: 'Desarrollo de motores de facturación y telecomunicaciones de misión crítica. Implementación de Java EE, PL/SQL Oracle y procesamiento concurrente masivo de datos con alta tolerancia a fallos.',
+      yearEn: 'Enterprise Core', titleEn: 'Backend Architecture & Open Systems', descEn: 'Mission-critical billing and telecom engines. Java EE, Oracle PL/SQL and massively concurrent data processing with high fault tolerance.',
       tags: ['Java Enterprise', 'Oracle PL/SQL', 'Billing Engines', 'Alta Concurrencia'],
       duration: 9
     },
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'GovTech & SAUL',
       title: 'Transformación Cívica & SAUL Cali',
       desc: 'Liderazgo en la modernización digital de la Alcaldía de Cali. Arquitectura y despliegue de SAUL, automatizando trámites de Uso de Suelo, Espectáculos Públicos y Subvenciones para la ciudadanía.',
+      yearEn: 'GovTech & SAUL', titleEn: 'Civic Transformation & SAUL Cali', descEn: 'Led the digital modernization of Cali City Hall. Architected and deployed SAUL, automating Land Use, Public Entertainment and Grants services for citizens.',
       tags: ['SAUL Digital', 'Alcaldía de Cali', 'Gestión Territorial', 'GovTech'],
       duration: 9
     },
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'Cloud & Distributed',
       title: 'Arquitectura Cloud & CSmart Telecom',
       desc: 'Diseño e implementación de ecosistemas cloud nativos en AWS. Microservicios distribuidos, contenedores Docker/Kubernetes y arquitecturas resilientes de alta disponibilidad.',
+      yearEn: 'Cloud & Distributed', titleEn: 'Cloud Architecture & CSmart Telecom', descEn: 'Design and implementation of cloud-native ecosystems on AWS. Distributed microservices, Docker/Kubernetes containers and resilient high-availability architectures.',
       tags: ['AWS Cloud', 'Microservicios', 'Kubernetes & Docker', 'Event-Driven'],
       duration: 9
     },
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'IA & Data Science',
       title: 'Inteligencia Artificial & Agent Dragon',
       desc: 'Revolución en automatización con IA Generativa y Agentes Autónomos de Voz. Integración con HubSpot, telefonía en tiempo real, síntesis de audio y flujos cognitivos de toma de decisiones.',
+      yearEn: 'AI & Data Science', titleEn: 'Artificial Intelligence & Agent Dragon', descEn: 'Automation revolution with Generative AI and Autonomous Voice Agents. HubSpot integration, real-time telephony, audio synthesis and cognitive decision flows.',
       tags: ['Agent Dragon', 'Voice AI', 'HubSpot CRM', 'LLMs & Machine Learning'],
       duration: 9
     },
@@ -51,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       year: 'Human Tech',
       title: 'Tecnología con Alma & Arteterapia',
       desc: 'Creación de plataformas que integran arte, ciencia de datos y salud: aplicaciones de rehabilitación vocal fonoaudiológica, motores de cuentos con IA y herramientas interactivas de arteterapia consciente.',
+      yearEn: 'Human Tech', titleEn: 'Technology with Soul & Art Therapy', descEn: 'Platforms blending art, data science and health: speech-therapy vocal rehabilitation apps, AI storytelling engines and interactive mindful art-therapy tools.',
       tags: ['Arteterapia', 'Rehabilitación Vocal', 'Cuentos IA', 'Canvas Interactivo'],
       duration: 8
     },
@@ -98,9 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Textos y badges
-    sceneBadge.textContent = s.year;
-    sceneTitle.textContent = s.title;
-    sceneDesc.textContent = s.desc;
+    // selección de idioma
+    const en = window.LANG === 'en';
+    sceneBadge.textContent = en ? (s.yearEn || s.year) : s.year;
+    sceneTitle.textContent = en ? (s.titleEn || s.title) : s.title;
+    sceneDesc.textContent = en ? (s.descEn || s.desc) : s.desc;
     
     sceneTags.innerHTML = '';
     s.tags.forEach(t => {
@@ -196,6 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderScene(0);
   startPlayback();
+  // re-render al cambiar idioma
+  window.addEventListener('langchange', () => renderScene(currentSceneIdx));
 
   // Filtros de Galería
   const filterBtns = document.querySelectorAll('.filter-btn');
