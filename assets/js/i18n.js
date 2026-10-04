@@ -5,7 +5,7 @@
   const I18N = [
     // [selector, ES, EN]
     // Navegación
-    ['a[href="#hero"]', 'Inicio', 'Home'],
+    ['.nav-links a[href="#hero"]', 'Inicio', 'Home'],
     ['a[href="#journey"]', 'Recorrido 60s', '60s Journey'],
     ['a[href="#gallery"]', 'Galería de Proyectos', 'Project Gallery'],
     ['a[href="#stack"]', 'Stack & Arquitectura', 'Stack & Architecture'],
