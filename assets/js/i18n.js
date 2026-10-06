@@ -17,7 +17,8 @@
     ['.metric-item:nth-child(1) .metric-lbl', 'Años de Experiencia', 'Years of Experience'],
     ['.metric-item:nth-child(2) .metric-lbl', 'Proyectos Clave', 'Key Projects'],
     ['.metric-item:nth-child(3) .metric-lbl', 'Usuarios Impactados', 'Users Impacted'],
-    ['.hero-cta-group .btn-primary', 'Ver Animación (60s)', 'Watch Animation (60s)'],
+    ['.hero-cta-group a[href="#journey"]', 'Ver Animación (60s)', 'Watch Animation (60s)'],
+    ['.hero-cta-group a[href$=".pdf"]', '📄 Descargar CV', '📄 Download CV'],
     ['.hero-cta-group .btn-outline', 'Explorar Proyectos', 'Explore Projects'],
     // Journey
     ['#journey .section-tag', 'Cinematic Journey', 'Cinematic Journey'],
